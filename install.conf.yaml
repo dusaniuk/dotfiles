@@ -11,3 +11,6 @@
     ~/.zshrc:
       force: true
       path: zsh/.zshrc
+
+- brewfile:
+    - Brewfile
