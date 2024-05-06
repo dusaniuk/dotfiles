@@ -11,6 +11,9 @@
     ~/.zshrc:
       force: true
       path: zsh/.zshrc
+    ~/.tmux.conf:
+      force: true
+      path: tmux/tmux.conf
 
 - brewfile:
     - Brewfile
