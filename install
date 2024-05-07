@@ -1,6 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 set -e
+
+PYTHON_VERSION=3.12.2
 
 CONFIG="install.conf.yaml"
 DOTBOT_DIR="deps/dotbot"
@@ -17,3 +19,8 @@ git submodule update --init --recursive "${DOTBOT_DIR}"
   --verbose \
   --plugin-dir ${DOTBOT_BREW_DIR} \
   -c "${CONFIG}" "${@}"
+
+# install python
+pyenv install "${PYTHON_VERSION}"
+pyenv global "${PYTHON_VERSION}"
+pyenv rehash

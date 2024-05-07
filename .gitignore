@@ -1,0 +1,22 @@
+# Temporary
+.netrwhist
+*~
+# Auto-generated tag files
+tags
+
+tmp/*
+
+vimrc.local
+config/nvim/plugged
+config/nvim/autoload/plug.vim
+backup/
+*.log
+.DS_Store
+
+/nvim/autoload
+
+# Ignore compiled zsh files
+*.zwc
+
+# JetBrains stuff
+/.idea
