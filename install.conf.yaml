@@ -8,12 +8,13 @@
     - [git submodule update --init --recursive, Installing submodules]
 
 - link:
-    ~/.zshrc:
-      force: true
-      path: zsh/.zshrc
+    ~/.direnvrc: direnv/.direnvrc
     ~/.tmux.conf:
       force: true
       path: tmux/tmux.conf
+    ~/.zshrc:
+      force: true
+      path: zsh/.zshrc
 
 - brewfile:
     - Brewfile

@@ -1,3 +1,10 @@
 {
-  "cSpell.words": ["cheatsheet", "dotbot", "dotfiles", "dusaniuk"]
+  "cSpell.words": [
+    "cheatsheet",
+    "direnv",
+    "direnvrc",
+    "dotbot",
+    "dotfiles",
+    "dusaniuk"
+  ]
 }
