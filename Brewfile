@@ -12,6 +12,7 @@ brew "zoxide"
 # fonts now are installed like this
 cask "font-meslo-lg-nerd-font"
 
+cask "nordvpn"
 cask "telegram"
 cask "raycast"
 cask "wezterm"
