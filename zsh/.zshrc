@@ -34,3 +34,8 @@ setopt hist_verify
 # completion using arrow keys (based on history)
 bindkey '^[[A' history-search-backward
 bindkey '^[[B' history-search-forward
+
+alias ls="eza --icons=always"
+
+eval "$(zoxide init zsh)"
+alias cd="z"

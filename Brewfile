@@ -6,6 +6,8 @@ brew "tmux"
 brew "powerlevel10k"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
+brew "eza"
+brew "zoxide"
 
 # fonts now are installed like this
 cask "font-meslo-lg-nerd-font"
