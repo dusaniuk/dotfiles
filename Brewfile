@@ -8,6 +8,7 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 brew "eza"
 brew "zoxide"
+brew "neovim"
 
 # fonts now are installed like this
 cask "font-meslo-lg-nerd-font"

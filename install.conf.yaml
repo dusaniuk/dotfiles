@@ -21,6 +21,8 @@
     ~/.wezterm.lua:
       force: true
       path: wezterm/.wezterm.lua
+    ~/.config/nvim:
+      path: nvim
 
 - brewfile:
     - Brewfile

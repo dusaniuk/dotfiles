@@ -7,3 +7,5 @@
 # alias zshconfig="vim ~/.zshrc"
 
 alias lzg="lazygit"
+
+alias vv="nvim"
