@@ -9,6 +9,8 @@ brew "zsh-syntax-highlighting"
 brew "eza"
 brew "zoxide"
 brew "neovim"
+brew "ripgrep"
+brew "nodenv"
 
 # fonts now are installed like this
 cask "font-meslo-lg-nerd-font"
