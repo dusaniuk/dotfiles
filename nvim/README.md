@@ -32,3 +32,5 @@ This is my Neovim configuration which I use in day to day work.
 | Open trouble locations list                           | `<leader>xl`                       |
 | Open todos in trouble                                 | `<leader>xt`                       |
 | Maximize current pane                                 | `<leader>sm`                       |
+| Toggle HopWord (new easymotion) to words              | `<leader>hw`                       |
+| Toggle HopWord to lines                               | `<leader>hl`                       |

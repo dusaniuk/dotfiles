@@ -1,4 +1,3 @@
-
 brew "direnv"
 brew "lazygit"
 brew "pyenv"
@@ -22,3 +21,4 @@ cask "wezterm"
 cask "firefox"
 cask "google-chrome"
 cask "spotify"
+cask "visual-studio-code"
