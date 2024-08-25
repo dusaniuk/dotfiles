@@ -14,6 +14,7 @@ brew "zsh-syntax-highlighting"
 # fonts now are installed like this
 cask "font-meslo-lg-nerd-font"
 
+cask "discord"
 cask "firefox"
 cask "google-chrome"
 cask "nordvpn"

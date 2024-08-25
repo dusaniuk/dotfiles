@@ -589,6 +589,12 @@
         "options": {
           "full_name": "visual-studio-code"
         }
+      },
+      "discord": {
+        "version": "0.0.316",
+        "options": {
+          "full_name": "discord"
+        }
       }
     }
   },
