@@ -595,6 +595,18 @@
         "options": {
           "full_name": "discord"
         }
+      },
+      "1password": {
+        "version": "8.10.40",
+        "options": {
+          "full_name": "1password"
+        }
+      },
+      "melodics": {
+        "version": "4.0.2051,E280AFBB-FF38-452A-A05D-4DCF7024B963",
+        "options": {
+          "full_name": "melodics"
+        }
       }
     }
   },
