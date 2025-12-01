@@ -1,6 +1,7 @@
 # Formulas
 brew "bash"
 brew "bc"
+brew "bun"
 brew "chezmoi"
 brew "coreutils"
 brew "eza"
