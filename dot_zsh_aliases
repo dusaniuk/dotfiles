@@ -1,2 +1,7 @@
 # lazygit
 alias lzg="lazygit"
+
+# neovim / lazyvim
+alias v="nvim"
+alias vi="nvim"
+alias vim="nvim"

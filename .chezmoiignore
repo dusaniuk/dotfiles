@@ -1,10 +1,12 @@
-# macOS only
+# macOS only - ignore these on Linux
 {{ if ne .chezmoi.os "darwin" }}
-dot_Brewfile
-run_once_05-install-tpm.sh
+.Brewfile
+02-install-macos-deps.sh
+05-install-tpm.sh
+brew-bundle.sh
 {{ end }}
 
-# Linux only
+# Linux only - ignore these on macOS
 {{ if ne .chezmoi.os "linux" }}
-run_once_install-packages-linux.sh
+02-install-linux-deps.sh
 {{ end }}
