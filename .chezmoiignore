@@ -1,0 +1,10 @@
+# macOS only
+{{ if ne .chezmoi.os "darwin" }}
+dot_Brewfile
+run_once_05-install-tpm.sh
+{{ end }}
+
+# Linux only
+{{ if ne .chezmoi.os "linux" }}
+run_once_install-packages-linux.sh
+{{ end }}
