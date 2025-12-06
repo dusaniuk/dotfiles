@@ -1,7 +1,17 @@
 # lazygit
 alias lzg="lazygit"
 
-# neovim / lazyvim
+# use nvim/lazyvim
 alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
+
+# zoxide is a better cd, while eza is a better ls
+# override these for now, maybe would switch to their own aliases later
+alias cd="zoxide"
+alias ls="eza"
+
+alias z="zoxide"
+
+# I am tired to type chezmoi all the time
+alias cz="chezmoi"
