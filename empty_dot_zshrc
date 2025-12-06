@@ -4,6 +4,9 @@ export XDG_CONFIG_HOME="$HOME/.config"
 # add bin to path
 export PATH="$HOME/.local/bin:$PATH"
 
+# enable vim mode to the shell
+set -o vi
+
 # Zinit bootstrap
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 if [[ ! -d "$ZINIT_HOME" ]]; then
