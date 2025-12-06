@@ -1,6 +1,7 @@
-theme = TokyoNight Storm
-font-size = 16
 background-blur = true
 background-opacity = 0.9
+font-size = 16
 mouse-hide-while-typing = true
+theme = TokyoNight Storm
+window-decoration = none
 
