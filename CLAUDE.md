@@ -1,0 +1,1 @@
+- always manage stuff via chezmoi
