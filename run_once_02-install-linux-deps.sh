@@ -24,10 +24,8 @@ sudo apt install -y \
 
 # CLI tools
 sudo apt install -y \
-    bash \
-    bc \
     curl \
-    gawk \
+    fzf \
     git \
     jq \
     mkcert \
@@ -63,13 +61,6 @@ if ! command -v eza &> /dev/null; then
     sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.list
     sudo apt update
     sudo apt install -y eza
-fi
-
-# glab (GitLab CLI)
-if ! command -v glab &> /dev/null; then
-    echo "Installing glab..."
-    curl -s https://raw.githubusercontent.com/upciti/wakemeops/main/assets/install_repository | sudo bash
-    sudo apt install -y glab
 fi
 
 # fnm (Node version manager)
