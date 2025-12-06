@@ -30,7 +30,8 @@ sudo apt install -y \
     jq \
     mkcert \
     ripgrep \
-    tmux
+    tmux \
+    unzip
 
 # gh (GitHub CLI)
 if ! command -v gh &> /dev/null; then
