@@ -10,3 +10,7 @@ brew-bundle.sh
 {{ if ne .chezmoi.os "linux" }}
 02-install-linux-deps.sh
 {{ end }}
+
+# Machine-local, never managed
+.ssh/
+.zsh_aliases.local

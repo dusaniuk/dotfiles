@@ -6,10 +6,11 @@ alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
 
-# zoxide is a better cd, while eza is a better ls
-# override these for now, maybe would switch to their own aliases later
-alias cd="z"
+# eza is a better ls
 alias ls="eza"
 
 # I am tired to type chezmoi all the time
 alias cz="chezmoi"
+
+# machine-local aliases (not in this repo)
+[[ -f ~/.zsh_aliases.local ]] && source ~/.zsh_aliases.local
