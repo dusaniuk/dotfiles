@@ -15,8 +15,7 @@ Personal dotfiles managed with [chezmoi](https://chezmoi.io/).
   - tmux-yank (system clipboard)
   - tmux-resurrect & tmux-continuum (session persistence)
 - **[Ghostty](https://ghostty.org/)** terminal with Catppuccin Mocha theme
-- **[fnm](https://github.com/Schniz/fnm)** - Fast Node Manager
-- **[pyenv](https://github.com/pyenv/pyenv)** - Python version manager
+- **[mise](https://mise.jdx.dev)** - Node, Python and Bun version manager
 - **[zoxide](https://github.com/ajeetdsouza/zoxide)** - smarter cd command
 
 ## Installation
@@ -44,11 +43,10 @@ zsh
 ├── empty_dot_zshrc                   # Zsh configuration
 ├── run_once_01-install-brew.sh       # Install Homebrew (macOS)
 ├── run_once_02-install-linux-deps.sh # Install packages (Linux)
-├── run_once_02-install-macos-deps.sh # Install pyenv deps (macOS)
-├── run_once_03-install-fnm.sh        # Install fnm
-├── run_once_04-install-pyenv.sh      # Install pyenv
+├── run_once_02-install-macos-deps.sh # Install build deps (macOS)
 ├── run_once_05-install-tpm.sh        # Install tmux plugin manager
-└── run_onchange_after_brew-bundle.sh.tmpl  # Run brew bundle when Brewfile changes
+├── run_onchange_after_brew-bundle.sh.tmpl  # Run brew bundle when Brewfile changes
+└── run_onchange_after_mise-install.sh.tmpl # Run mise install when mise config changes
 ```
 
 ## Platform Support

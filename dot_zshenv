@@ -1,0 +1,5 @@
+# Rust (rustup), only where it's installed
+[ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
+
+# mise shims for non-interactive shells; interactive ones use `mise activate` in .zshrc
+export PATH="$HOME/.local/share/mise/shims:$PATH"

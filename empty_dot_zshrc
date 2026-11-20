@@ -25,14 +25,8 @@ zinit ice as"command" from"gh-r" \
           atpull"%atclone" src"init.zsh"
 zinit light starship/starship
 
-# fnm
-export PATH="$HOME/.local/share/fnm:$PATH"
-eval "$(fnm env --use-on-cd)"
-
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+# mise (node, python, bun versions; per project via mise.toml / .nvmrc / .python-version)
+eval "$(mise activate zsh)"
 
 # zoxide
 eval "$(zoxide init zsh)"

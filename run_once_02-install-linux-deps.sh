@@ -6,7 +6,7 @@ echo "Installing packages for Linux..."
 # Update apt
 sudo apt update
 
-# Build dependencies (for pyenv, etc.)
+# Build dependencies (native node modules, Rust crates, Python from source)
 sudo apt install -y \
     build-essential \
     libssl-dev \
@@ -64,22 +64,22 @@ if ! command -v eza &> /dev/null; then
     sudo apt install -y eza
 fi
 
-# fnm (Node version manager)
-if ! command -v fnm &> /dev/null; then
-    echo "Installing fnm..."
-    curl -fsSL https://fnm.vercel.app/install | bash -s -- --skip-shell
+# mise (node, python, bun versions); installs to ~/.local/bin
+if ! command -v mise &> /dev/null && [[ ! -x "$HOME/.local/bin/mise" ]]; then
+    echo "Installing mise..."
+    curl -fsSL https://mise.run | sh
+fi
+
+# Rust (rustup); ~/.cargo/env is sourced from .zshenv
+if ! command -v rustup &> /dev/null && [[ ! -x "$HOME/.cargo/bin/rustup" ]]; then
+    echo "Installing Rust..."
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --no-modify-path
 fi
 
 # zoxide
 if ! command -v zoxide &> /dev/null; then
     echo "Installing zoxide..."
     curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
-fi
-
-# bun
-if ! command -v bun &> /dev/null; then
-    echo "Installing bun..."
-    curl -fsSL https://bun.sh/install | bash
 fi
 
 # pnpm
