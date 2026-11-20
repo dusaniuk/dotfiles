@@ -3,5 +3,4 @@ background-opacity = 0.9
 font-size = 16
 mouse-hide-while-typing = true
 theme = Catppuccin Mocha
-window-decoration = none
 
