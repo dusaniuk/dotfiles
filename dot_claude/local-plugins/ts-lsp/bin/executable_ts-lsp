@@ -1,0 +1,32 @@
+#!/bin/sh
+# Starts the right TypeScript language server for the workspace.
+# TypeScript 7+ has no tsserver.js and ships its own server (tsc --lsp);
+# older versions need typescript-language-server, which wraps tsserver.js.
+# Everything here must stay off stdout: the client reads it as protocol.
+
+PATH="$PATH:/opt/homebrew/bin"
+export PATH
+
+# Nearest node_modules/typescript, walking up from the project root.
+dir="${CLAUDE_PROJECT_DIR:-$PWD}"
+while [ ! -d "$dir/node_modules/typescript" ]; do
+  if [ "$dir" = "/" ] || [ -z "$dir" ]; then
+    dir=""
+    break
+  fi
+  dir=$(dirname "$dir")
+done
+
+if [ -n "$dir" ]; then
+  if [ -f "$dir/node_modules/typescript/lib/tsserver.js" ]; then
+    exec typescript-language-server --stdio
+  fi
+  exec "$dir/node_modules/.bin/tsc" --lsp --stdio
+fi
+
+# No TypeScript in the workspace: use the global one.
+major=$(tsc --version 2>/dev/null | sed -n 's/^Version \([0-9]*\).*/\1/p')
+if [ "${major:-0}" -ge 7 ]; then
+  exec tsc --lsp --stdio
+fi
+exec typescript-language-server --stdio

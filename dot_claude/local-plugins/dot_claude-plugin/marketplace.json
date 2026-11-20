@@ -1,0 +1,11 @@
+{
+  "name": "local-plugins",
+  "owner": { "name": "local" },
+  "plugins": [
+    {
+      "name": "ts-lsp",
+      "source": "./ts-lsp",
+      "description": "TypeScript language server that picks tsc --lsp (TypeScript 7+) or typescript-language-server (older) per workspace"
+    }
+  ]
+}

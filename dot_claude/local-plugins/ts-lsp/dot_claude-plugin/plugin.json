@@ -1,0 +1,5 @@
+{
+  "name": "ts-lsp",
+  "version": "0.1.0",
+  "description": "TypeScript language server that picks tsc --lsp (TypeScript 7+) or typescript-language-server (older) per workspace"
+}

@@ -1,0 +1,11 @@
+[user]
+	email = 20459871+dusaniuk@users.noreply.github.com
+	name = Yaroslav Dusaniuk
+[gpg]
+	format = ssh
+[user]
+	signingkey = ~/.ssh/id_ed25519.pub
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true

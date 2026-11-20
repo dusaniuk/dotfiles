@@ -1,0 +1,15 @@
+{
+  "typescript": {
+    "command": "${CLAUDE_PLUGIN_ROOT}/bin/ts-lsp",
+    "extensionToLanguage": {
+      ".ts": "typescript",
+      ".tsx": "typescriptreact",
+      ".mts": "typescript",
+      ".cts": "typescript",
+      ".js": "javascript",
+      ".jsx": "javascriptreact",
+      ".mjs": "javascript",
+      ".cjs": "javascript"
+    }
+  }
+}
